@@ -1,0 +1,18 @@
+[
+    {
+      "user": "admin",
+      "password": "12345",
+      "name": "Administrador"
+    },
+    {
+      "user": "user1",
+      "password": "password1",
+      "name": "Usuario Uno"
+    },
+    {
+        "user": "user2",
+        "password": "password2",
+        "name": "Usuario dos"
+      }
+  ]
+  
