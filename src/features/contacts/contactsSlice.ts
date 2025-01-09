@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, isAnyOf } from '@reduxjs/toolkit'
-import { apiRequest } from '../../utils/apiRequest';
+import { apiRequest } from '../../utils/apicontactrequest';
 import { ContactsInterface, IContactsInitialState } from '../interfaces/interfaces';
 import { RootState } from '../../app/store';
 

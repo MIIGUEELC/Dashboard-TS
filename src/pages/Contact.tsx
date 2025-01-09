@@ -150,8 +150,21 @@ export const Contact = () => {
     });
   };
 
-  const formattedDate = (dateTime: string) => {
+
+  
+
+  const formattedDate = (dateTime: string | undefined) => {
+    if (!dateTime) {
+      return "Invalid Date";
+    }
+    
     const date = new Date(dateTime);
+  
+    // Verifica si la fecha es válida
+    if (isNaN(date.getTime())) {
+      return "Invalid Date";
+    }
+  
     const months = [
       "January",
       "February",
@@ -172,14 +185,12 @@ export const Contact = () => {
     };
     const formattedDate = `${days[date.getDay()]} ${
       months[date.getMonth()]
-    } ${formatTwoDigits(
-      date.getDate()
-    )} ${date.getFullYear()} - ${formatTwoDigits(
+    } ${formatTwoDigits(date.getDate())} ${date.getFullYear()} - ${formatTwoDigits(
       date.getHours()
     )}:${formatTwoDigits(date.getMinutes())}`;
     return formattedDate;
   };
-
+  
   const columns = [
     {
       property: "dateTime",
