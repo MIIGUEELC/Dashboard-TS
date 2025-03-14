@@ -81,7 +81,7 @@ export const Kpis = () => {
             </IconContainer>
             <TextContainer>
               {" "}
-              <H1>8,461</H1>
+              <H1>8,566</H1>
               <H2>New Bookings</H2>{" "}
             </TextContainer>
           </ItemContainer>
